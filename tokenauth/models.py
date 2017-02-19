@@ -6,7 +6,7 @@ from django.db import models
 
 
 if hasattr(settings, 'USER_AUTH_MODEL'):
-    user = settings.user_auth_model
+    User = settings.USER_AUTH_MODEL
 
 
 class Token(models.Model):
