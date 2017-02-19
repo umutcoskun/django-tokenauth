@@ -20,6 +20,12 @@ Then you must `tokenauth` to your `INSTALLED_APPS` and and `tokenauth.middleware
 token, created = Token.objects.get_or_create(user=request.user)
 ```
 
+You can bulk create tokens via management command:
+
+```
+./manage.py generatetokens
+```
+
 ## Customization
 You should define these settings in your main *settings.py* file. Otherwise, TokenAuth will use the default settings.
 
