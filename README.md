@@ -12,7 +12,7 @@ Currently, only the development version is available. :)
 
 ```pip3 install git+git://github.com/umutcoskun/django-tokenauth.git```
 
-Then you must `tokenauth` to your `INSTALLED_APPS` and and `tokenauth.middleware.LoginMiddleware` to your `MIDDLEWARE`. Middleware will make available token authentication for all URLs. If you dont want this, see `Common View` section.
+Then you should add `tokenauth` to your `INSTALLED_APPS` and `tokenauth.middleware.LoginMiddleware` to your `MIDDLEWARE`. Middleware will make available token authentication for all URLs. If you dont want this, see `Common View` section.
 
 ## Usage
 
